@@ -1,0 +1,93 @@
+header {
+  background: #31363B;
+  height: 75px;
+
+  padding-left: 16px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+}
+
+html {
+  background: #272C32;
+}
+
+.content {
+  display: flex;
+  padding: 16px;
+}
+
+.weather {
+  background: linear-gradient(108.79deg, rgba(0, 18, 185, 0.75) 0%, rgba(59, 174, 239, 0.75) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  width: 40%;
+
+  padding: 16px;
+
+  position: relative;
+}
+
+
+.city {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 125%;
+  line-height: 26px;
+
+  color: #FFFFFF;
+}
+
+.temperature {
+  margin-top: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 350%;
+  line-height: 75px;
+
+  color: #FFFFFF;
+}
+
+.condition {
+  margin-top: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 125%;
+  line-height: 23px;
+
+  color: #ADADAD;
+}
+
+.icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 80%;
+}
+
+@media screen and (max-width: 980px) {
+  .weather {
+    width: 100%;
+  }
+
+  .icon {
+    height: 75%;
+  }
+}
