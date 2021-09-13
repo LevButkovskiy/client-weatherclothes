@@ -25,21 +25,100 @@ html {
 
 .content {
   display: flex;
+  flex-direction: column;
   padding: 16px;
 }
 
 .weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherContainer {
   background: linear-gradient(108.79deg, rgba(0, 18, 185, 0.75) 0%, rgba(59, 174, 239, 0.75) 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 
-  width: 40%;
+  width: 45%;
 
   padding: 16px;
 
+  margin-top: 8px;
+
+}
+
+.weatherConditions {
+  display: flex;
+  flex-direction: row;
+}
+
+.condition {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 64px;
+  height: 64px;
+
+  text-align: center;
+
+  margin-right: 20px;
+
+  padding: 8px;
+}
+
+.condition > .title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.condition > .value {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.condition > .measure {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.weatherContainer {
   position: relative;
 }
 
+.weatherConditions {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+
+  margin-top: 16px;
+}
+.clothes {
+  margin-top: 32px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
 
 .city {
   font-family: 'Raleway';
@@ -63,7 +142,19 @@ html {
   color: #FFFFFF;
 }
 
-.condition {
+.chill {
+  margin-top: 8px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
+
+.weatherCondition {
   margin-top: 16px;
 
   font-family: 'Raleway';
@@ -84,10 +175,23 @@ html {
 
 @media screen and (max-width: 980px) {
   .weather {
-    width: 100%;
+    flex-direction: column;
+  }
+
+  .weatherContainer {
+    width: 90%;
+  }
+
+  .weatherConditions {
+    text-align: left;
   }
 
   .icon {
-    height: 75%;
+    height: 50%;
+  }
+
+  .condition {
+    width: 48px;
+    height: 48px;
   }
 }
